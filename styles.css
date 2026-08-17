@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+header .title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  opacity: 0.9;
+}
+
+.contact {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.contact span {
+  margin: 0 15px;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 50px 0;
+}
+
+.about {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #667eea;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+}
+
+section h2 {
+  color: #667eea;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.skills ul, .hobbies ul, .interests ul {
+  list-style: none;
+}
+
+.skills ul li, .hobbies ul li, .interests ul li {
+  background: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.skills ul li:hover, .hobbies ul li:hover, .interests ul li:hover {
+  transform: translateY(-5px);
+}
+
+.job, .edu-item {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.job h3, .edu-item h3 {
+  color: #764ba2;
+  font-size: 1.4rem;
+}
+
+.company, .edu-item p {
+  color: #555;
+  font-weight: 500;
+}
+
+.edu-item span {
+  display: block;
+  margin-top: 8px;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #333;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 40px 20px;
+  }
+  
+  header h1 {
+    font-size: 2.4rem;
+  }
+  
+  .contact span {
+    display: block;
+    margin: 10px 0;
+  }
+}
